@@ -166,7 +166,7 @@ export default function PDFPreview() {
       );
       toast.dismiss();
       toast.success("Signed PDF ready!");
-      window.open(`http://localhost:5000/${res.data.signedFile}`, "_blank");
+      window.open(`https://digital-sign-backend.onrender.com/${res.data.signedFile}`, "_blank");
       navigate("/home");
     } catch (err) {
       toast.dismiss();
@@ -243,7 +243,7 @@ export default function PDFPreview() {
     );
   }
 
-  const fileUrl = `http://localhost:5000/${doc.filepath}`;
+  const fileUrl = `https://digital-sign-backend.onrender.com/${doc.filepath}`;
 
   // --- MOBILE UI ---
   if (isMobile) {

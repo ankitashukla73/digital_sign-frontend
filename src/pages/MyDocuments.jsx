@@ -126,7 +126,7 @@ export default function MyDocuments() {
                     <Eye className="w-5 h-5 mr-1" /> Preview
                   </motion.button>
                   <a
-                    href={`http://localhost:5000/uploads/${doc.filename}`}
+                    href={`https://digital-sign-backend.onrender.com/uploads/${doc.filename}`}
                     download={doc.originalname}
                     target="_blank"
                     rel="noopener noreferrer"
